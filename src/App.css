@@ -1,0 +1,48 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+*{
+  border: 0px solid red;
+}
+.App{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 15vh 27vh 5vh 25vh;
+  gap: 2vh 0;
+  grid-template-areas: "jokenpo jokenpo" "jogadas placar" "botoes botoes" "resultado resultado";
+}
+.jokenpo{
+  grid-area: jokenpo;
+}
+.Jogadas{
+  grid-area: jogadas;
+}
+.Jogadas div{margin-top: 2vh;
+}
+.Placar{
+  justify-content: top;
+  display: flex;
+  flex-direction: column;
+  grid-area: placar;
+  border: 1px solid white;
+  padding: 2vh;
+  border-radius: 15px;
+}
+.Placar div{
+  display: flex;
+  gap: 2vh;
+}
+.Escolhas{
+  display: flex;
+  place-items: center;
+  flex-direction: column;
+}
+.botoes{
+  grid-area: botoes;
+}
+.resultadoFinal{
+  grid-area: resultado;
+}
